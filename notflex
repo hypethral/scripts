@@ -1,0 +1,7 @@
+#!/bin/bash
+
+
+echo "by dark"
+echo -n $"enter magnet id -> "
+read magnet
+peerflix $magnet --mpv --remove --list
