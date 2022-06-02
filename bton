@@ -1,0 +1,4 @@
+#!/bin/sh
+rfkill unblock 1
+sleep 3
+bluetoothctl power on
