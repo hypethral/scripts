@@ -1,4 +1,4 @@
 #!/bin/sh
-rfkill unblock 1
+rfkill unblock 0
 sleep 3
 bluetoothctl power on
