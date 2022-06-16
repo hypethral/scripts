@@ -1,4 +1,5 @@
 #!/bin/sh
-rfkill unblock 0
+rfkill unblock bluetooth
 sleep 3
 bluetoothctl power on
+bluetoothctl connect 98:80:BB:40:20:3F
