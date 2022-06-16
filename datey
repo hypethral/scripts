@@ -1,0 +1,3 @@
+#!/bin/sh
+
+echo " $(date '+%A %d %B %Y %I:%M %p')"
