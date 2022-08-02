@@ -2,3 +2,5 @@ dd bs=4M if=path/to/archlinux-version-x86_64.iso of=/dev/sdx conv=fsync oflag=di
 paste <(cat /sys/class/thermal/thermal_zone*/type) <(cat /sys/class/thermal/thermal_zone*/temp) | column -s $'\t' -t | sed 's/\(.\)..$/.\1°C/'
 
 xrandr --output HDMI-1-0 --auto
+cat /sys/bus/pci/devices/0000:01:00.0/power/runtime_status
+nmap -sS -sV -Pn -p- 192.168.10.28
