@@ -3,4 +3,3 @@ rfkill unblock bluetooth
 sleep 3
 bluetoothctl power on
 bluetoothctl
-default-agent
