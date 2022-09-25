@@ -1,3 +1,0 @@
-#!/bin/sh
-cpu_temp=$(($(cat /sys/class/thermal/thermal_zone4/temp) / 1000))
-echo " ${cpu_temp}°C"
