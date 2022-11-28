@@ -4,3 +4,4 @@ paste <(cat /sys/class/thermal/thermal_zone*/type) <(cat /sys/class/thermal/ther
 xrandr --output HDMI-1-0 --auto
 cat /sys/bus/pci/devices/0000:01:00.0/power/runtime_status
 nmap -sS -sV -Pn -p- 192.168.10.28
+gpg -c --no-symkey-cache --cipher-algo AES256 packages
