@@ -1,0 +1,6 @@
+#!/bin/bash
+
+
+echo -n $"enter number of seconds -> "
+read sec
+doas rtcwake -m no -s $sec; systemctl suspend; sleep 4s; vlc ~/alarm.mp3 
