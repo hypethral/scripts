@@ -1,0 +1,90 @@
+*filter
+# Setting up a "deny all-accept all" policy
+# Allow all outgoing, but deny/drop all incoming and forwarding traffic
+:INPUT DROP [0:0]
+:FORWARD DROP [0:0]
+:OUTPUT ACCEPT [0:0]
+
+# Custom per-protocol chains
+# Defining custom rules for UDP protocol.
+:UDP - [0:0]
+# Defining custom rules for TCP protocol.
+:TCP - [0:0]
+# Defining custom rules for ICMP protocol.
+:ICMP - [0:0]
+
+# Accept SSH UDP traffic
+# -A TCP -p udp --dport 22 -j ACCEPT
+# Accept SSH TCP traffic
+# -A TCP -p tcp --dport 22 -j ACCEPT
+
+# Acceptable ICMP traffic
+
+# Boilerplate acceptance policy
+# Allowing packets based on the CONNTRACK connection states of ESTABLISHED and RELATED
+-A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+# Allowing packets through the loopback interface, which is used for local connections
+-A INPUT -i lo -j ACCEPT
+
+# Packets that do not match any rules in the protocol-specific should be dropped.
+-A INPUT -m conntrack --ctstate INVALID -j DROP
+# Allowing new protocol-specific chains to process packets for UDP that have a NEW conntrack state.
+-A INPUT -p udp -m conntrack --ctstate NEW -j UDP
+# Allowing new protocol-specific chains to process packets for TCP that have a NEW conntrack state.
+-A INPUT -p tcp --syn -m conntrack --ctstate NEW -j TCP
+# Allowing new protocol-specific chains to process packets for ICMP that have a NEW conntrack state.
+-A INPUT -p icmp -m conntrack --ctstate NEW -j ICMP
+
+# Reject anything at this point. And print out rejection message with its specific protocol.
+# Issuing an ICMP "port unreachable" message to any new incoming UDP packets, rejecting them.
+-A INPUT -p udp -j REJECT --reject-with icmp-port-unreachable
+# Issuing a "tcp-reset" message to any new incoming TCP packets, rejecting them.
+-A INPUT -p tcp -j REJECT --reject-with tcp-reset
+# Issuing an "icmp-proto-unreachable" message to any new incoming TCP packets, dropping all other incoming packets.
+-A INPUT -j REJECT --reject-with icmp-proto-unreachable
+
+# Commit the changes
+COMMIT
+
+*raw
+# Allowing packets in the PREROUTING chain
+:PREROUTING ACCEPT [0:0]
+# Allows packets in the OUTPUT chain, which is used for locally generated packets
+:OUTPUT ACCEPT [0:0]
+# Commits the changes to the kernel
+COMMIT
+# NAT table is used to alter packets as they are routed through the system
+*nat
+:PREROUTING ACCEPT [0:0]
+# Allowing packets in the INPUT chains for NAT
+:INPUT ACCEPT [0:0]
+# Allowing packets in the OUTPUT chains for NAT
+:OUTPUT ACCEPT [0:0]
+# Allowing packets in the POSTROUTING chains for NAT
+:POSTROUTING ACCEPT [0:0]
+# Commits the changes to the kernel
+COMMIT
+
+*security
+# Allowing packets in the INPUT chains for security
+:INPUT ACCEPT [0:0]
+# Allowing packets in the FORWARD chains for security
+:FORWARD ACCEPT [0:0]
+# Allowing packets in the OUTPUT chains for security
+:OUTPUT ACCEPT [0:0]
+# Commits the changes to the kernel
+COMMIT
+
+*mangle
+# Allowing packets in the PREROUTING chains for mangle
+:PREROUTING ACCEPT [0:0]
+# Allowing packets in the INPUT chains for mangle
+:INPUT ACCEPT [0:0]
+# Allowing packets in the FORWARD chains for mangle
+:FORWARD ACCEPT [0:0]
+# Allowing packets in the OUTPUT chains for mangle
+:OUTPUT ACCEPT [0:0]
+# Allowing packets in the POSTROUTING chains for mangle
+:POSTROUTING ACCEPT [0:0]
+# Commits the changes to the kernel
+COMMIT
