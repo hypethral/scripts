@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/dark/.config/waybar'
+let g:netrw_dirhist_7='/home/dark/.config/hypr'
+let g:netrw_dirhist_6='/home/dark/.config/picom'
+let g:netrw_dirhist_5='/home/dark/.config/i3'
+let g:netrw_dirhist_4='/home/dark/.config'
+let g:netrw_dirhist_3='/home/dark/.config/gh'
+let g:netrw_dirhist_2='/home/dark/.config/polybar'
+let g:netrw_dirhist_1='/home/dark/.config/gh'
+let g:netrw_dirhist_0='/home/dark/.local/lib/python3.10/site-packages/opencv_python.libs'
+let g:netrw_dirhist_9='/etc/systemd/system'
