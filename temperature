@@ -1,2 +1,2 @@
 #!/bin/sh
-echo " $(sensors -u coretemp-isa-0000 | grep "temp1_input:" | awk '{print $2}' | cut -d '.' -f 1 )°C"
+echo " $(sensors -u coretemp-isa-0000 | grep "temp1_input:" | awk '{print $2}' | cut -d '.' -f 1 )°C"
