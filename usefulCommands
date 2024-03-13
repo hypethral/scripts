@@ -7,3 +7,12 @@ nmap -sS -sV -Pn -p- 192.168.10.28
 gpg -c --no-symkey-cache --cipher-algo AES256 packages
 
 nmap -sn 192.168.100.1/24 -vv
+
+ffmpeg -i file -vf scale=1920:-2 outfile
+ffmpeg -i input -c:v libx264 -preset slow -crf 22 -c:a copy output.mkv
+ffmpeg -i source.ext -c:v h264_nvenc -rc constqp -qp 30 output.mkv
+
+
+yt-dlp --embed-subs 'https://youtube.com/playlist?list=PLq62NxyArWQHMVWBl8TdNrDWiCbtDNv60&si=b3ypNKdlpfq4JejR'
+
+“site:instagram.com intext:username”
