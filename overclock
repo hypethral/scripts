@@ -1,4 +1,4 @@
 #!/bin/sh
 
-nvidia-settings -c :0 -a [gpu:0]/GPUMemoryTransferRateOffset[3]=640
-nvidia-settings -c :0 -a [gpu:0]/GPUGraphicsClockOffset[3]=155
+nvidia-settings -c :0 -a [gpu:0]/GPUMemoryTransferRateOffset[3]=600
+nvidia-settings -c :0 -a [gpu:0]/GPUGraphicsClockOffset[3]=112
