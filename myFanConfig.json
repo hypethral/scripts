@@ -1,0 +1,76 @@
+{
+  "NotebookModel": "Acer Predator PH317-53",
+  "Author": "mikolaj612",
+  "EcPollInterval": 700,
+  "ReadWriteWords": false,
+  "CriticalTemperature": 92,
+  "FanConfigurations": [
+    {
+      "ReadRegister": 112,
+      "WriteRegister": 219,
+      "MinSpeedValue": 21,
+      "MaxSpeedValue": 99,
+      "IndependentReadMinMaxValues": true,
+      "MinSpeedValueRead": 0,
+      "MaxSpeedValueRead": 4500,
+      "ResetRequired": true,
+      "FanSpeedResetValue": 64,
+      "FanDisplayName": "CPU &amp; GPU Fan control",
+      "TemperatureThresholds": [
+          {
+            "UpThreshold": 52,
+            "DownThreshold": 0,
+            "FanSpeed": 0.0
+          },
+          {
+            "UpThreshold": 60,
+            "DownThreshold": 52,
+            "FanSpeed": 9.0
+          },
+          {
+            "UpThreshold": 68,
+            "DownThreshold": 59,
+            "FanSpeed": 38.0
+          },
+          {
+            "UpThreshold": 70,
+            "DownThreshold": 64,
+            "FanSpeed": 69.0
+          },
+          {
+            "UpThreshold": 80,
+            "DownThreshold": 68,
+            "FanSpeed": 100.0
+          },
+          {
+            "UpThreshold": 92,
+            "DownThreshold": 72,
+            "FanSpeed": 100.0
+          }
+        ],
+      "FanSpeedPercentageOverrides": []
+    }
+  ],
+  "RegisterWriteConfigurations": [
+      {
+        "WriteMode": "Set",
+        "WriteOccasion": "OnWriteFanSpeed",
+        "Register": 221,
+        "Value": 42,
+        "ResetRequired": true,
+        "ResetValue": 0,
+        "ResetWriteMode": "Set",
+        "Description": "GPU sensor disable"
+      },
+      {
+        "WriteMode": "Set",
+        "WriteOccasion": "OnInitialization",
+        "Register": 245,
+        "Value": 0,
+        "ResetRequired": true,
+        "ResetValue": 0,
+        "ResetWriteMode": "Set",
+        "Description": "CoolBoost disable"
+      }
+  ]
+}

@@ -1,0 +1,5 @@
+title   Arch Linux
+linux   /vmlinuz-linux-lts
+initrd  /intel-ucode.img
+initrd  /initramfs-linux-lts.img
+options root=UUID=6c9e8d98-2a86-4019-854a-d4492d6a9278 rw intel_iommu=on resume=UUID=6c9e8d98-2a86-4019-854a-d4492d6a9278 resume_offset=28491776 pcie_aspm=off
