@@ -11,8 +11,13 @@ nmap -sn 192.168.100.1/24 -vv
 ffmpeg -i file -vf scale=1920:-2 outfile
 ffmpeg -i input -c:v libx264 -preset slow -crf 22 -c:a copy output.mkv
 ffmpeg -i source.ext -c:v h264_nvenc -rc constqp -qp 30 output.mkv
-
+ffmpeg -hwaccel nvdec -i input.mkv -c:v h264_nvenc -preset slow -crf 18 -c:a copy  -b:v 8000k output.mkv 
 
 yt-dlp --embed-subs 'https://youtube.com/playlist?list=PLq62NxyArWQHMVWBl8TdNrDWiCbtDNv60&si=b3ypNKdlpfq4JejR'
+yt-dlp 'link' -S "res:1080,vcodec:av1"
+
 
 “site:instagram.com intext:username”
+
+ufw allow from 192.168.1.104 to any port 50000:50003 proto tcp
+ufw allow from 192.168.1.104 to any port 2211
