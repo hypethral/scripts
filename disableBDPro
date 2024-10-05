@@ -1,0 +1,1 @@
+doas wrmsr 0x1FC 2c005d

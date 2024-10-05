@@ -1,0 +1,5 @@
+#!/bin/sh
+# start the VM
+virsh --connect qemu:///system start "archlinux"
+# connect to the VM
+virt-manager --connect qemu:///system --show-domain-console "archlinux"
