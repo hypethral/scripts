@@ -1,185 +1,227 @@
-acpi
-acpid
-alsa-utils
-android-tools
-arandr
-arch-install-scripts
-at
-autoconf
-automake
-base
-bash-completion
-bind
-bison
-bluez
-bluez-utils
-bottom
-bridge-utils
-brightnessctl
-chromium
-cmake
-cmatrix
-cpupower
-cups
-dmidecode
-dnsmasq
-dosfstools
-dotnet-runtime
-dotnet-sdk
-dpkg
-efibootmgr
-eog
-ettercap
-evtest
-fakeroot
-feh
-ffmpegthumbnailer
-firefox
-flameshot
-fortune-mod
-gcc
-gedit
-git
-git-lfs
-github-cli
-gparted
-groff
-gvfs
-gvfs-mtp
-hashcat
-hdparm
-helvum
-htop
-hyprland
-hyprpaper
-i3-wm
-i3blocks
-inetutils
-intel-compute-runtime
-intel-gpu-tools
-intel-ucode
-intel-undervolt
-iptables
-irssi
-jdk8-openjdk
-jpegoptim
-jupyter-notebook
-kitty
-lib32-nvidia-utils
-lib32-vulkan-icd-loader
-libmythes
-libreoffice-fresh
-libtool
-libva-intel-driver
-libva-utils
-libvdpau-va-gl
-libvirt
-linux-firmware
-linux-firmware-qlogic
-linux-lts
-linux-lts-headers
-linuxconsole
-lolcat
-lshw
-lsof
-lxappearance
-lxqt-policykit
-lxsession
-m4
-make
-man-db
-mariadb
-materia-gtk-theme
-maven
-mc
-mesa-utils
-mpv
-mtools
-mtpfs
-ncdu
-neofetch
-net-tools
-network-manager-applet
-networkmanager
-networkmanager-openvpn
-nitrogen
-nmap
-ntfs-3g
-nvidia-dkms
-nvidia-prime
-nvidia-settings
-nvme-cli
-nvtop
-nwg-look
-openbsd-netcat
-opencl-nvidia
-opendoas
-openssl-1.1
-openvpn
-pacman-contrib
-pamixer
-parallel
-pass
-pavucontrol
-pdftk
-picom
-pipewire
-pipewire-pulse
-pkgconf
-pngcrush
-polybar
-powertop
-progress
-proxychains-ng
-python-pip
-python-scikit-learn
-python-virtualenvwrapper
-qbittorrent
-qt6-wayland
-ranger
-reflector
-rsync
-rust
-smartmontools
-speedtest-cli
-steam
-streamlink
-stress
-sway
-tesseract-data-eng
-thunar
-thunar-archive-plugin
-thunar-volman
-tor
-traceroute
-tree
-ttf-fira-code
-ttf-font-awesome
-ttf-hack
-ttf-jetbrains-mono
-tumbler
-unzip
-usbutils
-vde2
-vdpauinfo
-vim
-virt-manager
-virt-viewer
-vlc
-vulkan-intel
-vulkan-tools
-waybar
-wget
-which
-wofi
-xarchiver
-xclip
-xdg-desktop-portal-dde
-xorg-font-util
-xorg-server
-xorg-xev
-xorg-xinit
-xorg-xinput
-xorg-xwininfo
-yt-dlp
-zip
+acpi 1.7-4
+acpid 2.0.34-2
+aic94xx-firmware 30-10
+alsa-utils 1.2.12-1
+amass-bin 4.2.0-1
+android-tools 35.0.2-6
+arandr 0.1.11-3
+arch-wiki-docs 20241001-1
+autoconf 2.72-1
+automake 1.17-1
+base 3-2
+base-devel 1-2
+bash-completion 2.14.0-2
+bind 9.20.2-1
+bison 3.8.2-8
+bluez 5.78-1
+bluez-utils 5.78-1
+bridge-utils 1.7.1-2
+brightnessctl 0.5.1-3
+btrfs-progs 6.11-1
+cbonsai 1.3.1-3
+chatterino2-appimage 2.5.1-1
+chiaki 2.2.0-2
+chntpw 140201-5
+chromium 129.0.6668.89-1
+cmake 3.30.4-1
+cmatrix 2.0-3
+code 1.93.1-1
+cpupower 6.10-2
+cups 2:2.4.10-1
+curlftpfs 0.9.2-10
+ddgr 2.2-1
+dirsearch 0.4.3-5
+discord 0.0.70-1
+dmenu 5.3-3
+dmidecode 3.6-1
+dnsmasq 2.90-1
+dosfstools 4.2-5
+dpkg 1.22.11-1
+efibootmgr 18-3
+eog 47.0-1
+fakeroot 1.36-1
+fd 10.2.0-1
+feh 3.10.3-1
+ffmpegthumbnailer 2.2.3-2
+firefox 131.0-1
+flameshot 12.1.0-5
+fortune-mod 3.20.0-2
+gamemode 1.8.2-1
+gcc 14.2.1+r134+gab884fffe3fc-1
+gedit 48.0-1
+gftp 2.9.1b-6
+gimp 2.10.38-4
+git 2.46.2-1
+git-lfs 3.5.1-1
+github-cli 2.58.0-1
+hashcat 1:6.2.6-2
+htop 3.3.0-3
+hyprcursor 0.1.10-1
+hypridle 0.1.2-1
+hyprland 0.43.0-1
+hyprlang 0.5.2-1
+hyprshot 1.3.0-1
+i3-wm 4.23-4
+inetutils 2.5-1
+inkscape 1.3.2-12
+intel-compute-runtime 24.35.30872.22-1
+intel-gpu-tools 1.27-2
+intel-media-driver 24.3.3-1
+intel-ucode 20240910-1
+intel-undervolt 1.7-3
+inxi 3.3.36.1-1
+ipinfo-cli 3.3.1-1
+jdk8-openjdk 8.422.u05-1
+kitty 0.36.4-1
+lib32-vulkan-icd-loader 1.3.295-1
+libguestfs 1.52.2-3
+libqalculate 5.2.0.1-1
+libreoffice-still 24.2.6-5
+libva-utils 2.22.0-1
+libvirt 1:10.7.0-2
+linux-firmware 20240909.552ed9b8-1
+linux-firmware-qlogic 20240909.552ed9b8-1
+linux-lts 6.6.52-1
+linux-lts-headers 6.6.52-1
+lolcat 100.0.1-2
+lshw B.02.20-1
+lsof 4.99.3-2
+lxappearance 0.6.3-5
+m4 1.4.19-3
+make 4.4.1-2
+man-db 2.13.0-1
+mate-polkit 1.28.1-2
+materia-gtk-theme 20210322-3
+mesa-utils 9.0.0-5
+mpv 1:0.39.0-1
+msr-tools 1.3-4
+mtools 1:4.0.45-1
+nbfc-linux 0.2.7-1
+ncdu 2.6-1
+neofetch 7.1.0-2
+net-tools 2.10-3
+network-manager-applet 1.36.0-1
+networkmanager 1.48.10-1
+networkmanager-openvpn 1.12.0-1
+nitrogen 1.6.1-6
+nmap 7.95-1
+nodejs 22.9.0-1
+npm 10.8.3-1
+ntfs-3g 2022.10.3-1
+ntfs2btrfs 20240115-1
+numix-circle-icon-theme-git 24.10.01.r0.g25c3f9e-1
+nvidia-lts 1:560.35.03-10
+nvidia-prime 1.0-5
+nvidia-settings 560.35.03-1
+nvidia-utils 560.35.03-5
+nvme-cli 2.10.2-1
+nvtop 3.1.0-1
+nwg-look 0.2.7-1
+openbsd-netcat 1.226_1-2
+opendoas 6.8.2-3
+openssl-1.1 1.1.1.w-2
+openvpn 2.6.12-1
+osu-lazer-bin 2024.906.2-1
+pacman-contrib 1.10.6-2
+pamixer 1.6-3
+parallel 20240922-1
+paru 2.0.4-1
+paru-debug 2.0.4-1
+pass 1.7.4-5
+pavucontrol 1:6.1-1
+pcsx2-latest-bin 2.1.177-1
+picom 11.2-1
+pipewire 1:1.2.5-1
+pipewire-pulse 1:1.2.5-1
+pkgconf 2.1.1-1
+polybar 3.7.2-2
+powertop 2.15-2
+progress 0.17-1
+proton-ge-custom-bin 1:GE_Proton9_15-1
+proxychains-ng 4.17-2
+python-matplotlib 3.9.2-1
+python-mysqlclient 2.2.4-1
+python-nltk 3.8.1-4
+python-numpy 2.1.1-1
+python-nvidia-ml-py 12.560.30-1
+python-pandas 2.2.2-3
+python-pip 24.2-1
+python-pyspellchecker 0.8.1-2
+python-scikit-learn 1.5.2-1
+python-seaborn 0.13.2-1
+python-shodan 1.31.0-2
+qalculate-gtk 5.2.0-1
+qbittorrent 5.0.0-1
+qemu-img 9.1.0-2
+qpwgraph 0.7.8-1
+qt6-wayland 6.7.3-1
+ranger 1.9.3-11
+rar 7.01-1
+rclone 1.68.0-1
+reflector 2023-2
+rofi-wayland 1.7.5+wayland3-2
+rsync 3.3.0-2
+rust 1:1.81.0-1
+sl 5.05-5
+smartmontools 7.4-2
+spacecadetpinball-git 2.1.0.r6.gcb9b7b8-1
+speedtest-cli 2.1.3-8
+spotify-launcher 0.6.0-1
+steam 1.0.0.81-2
+streamlink 6.11.0-1
+stress 1.0.7-2
+subfinder-bin 2.6.6-2
+swappy 1.5.1-2
+swaybg 1.2.1-1
+swww 0.9.5-2
+tesseract-data-eng 2:4.1.0-4
+textsnatcher-git 2.0.0.r5.g1d7e059-1
+tgpt 2.8.1-1
+thunar 4.18.11-2
+thunar-archive-plugin 0.5.2-2
+tldr 3.3.0-1
+tor 0.4.8.12-1
+torbrowser-launcher 0.3.7-2
+traceroute 2.1.5-1
+tree 2.1.3-1
+ttf-fira-code 6.2-2
+ttf-font-awesome 6.6.0-1
+ttf-font-awesome-4 4.7.0-7
+ttf-hack 3.003-7
+ttf-jetbrains-mono 2.304-2
+ttf-montserrat 7.222-2
+tumbler 4.18.2-2
+ufw 0.36.2-4
+unzip 6.0-21
+upd72020x-fw 1:1.0.0-2
+usbutils 017-1
+vde2 2.3.3-5
+vdpauinfo 1.5-2
+ventoy-bin 1.0.99-1
+vim 9.1.0740-1
+virt-manager 4.1.0-3
+virt-viewer 11.0-3
+vlc 3.0.21-6
+vsftpd 3.0.5-1
+vulkan-mesa-layers 1:24.2.3-1
+vulkan-tools 1.3.269-1
+w3m 0.5.3.git20230713_1-1
+waybar 0.11.0-3
+waypaper 2.3-1
+wd719x-firmware 1-7
+wev 1.0.0-13
+wget 1.24.5-3
+which 2.21-6
+whois 5.5.23-1
+wikiman 2.13.2-2
+wireshark-qt 4.4.0-1
+wofi 1.4.1-1
+xarchiver 0.5.4.23-1
+xdg-desktop-portal-hyprland 1.3.6-1
+xorg-server 21.1.13-1
+xorg-xinit 1.4.2-2
+xorg-xwininfo 1.1.6-2
+yt-dlp 2024.09.27-1
+ytfzf 2.6.2-1
+zip 3.0-11
+zmap 4.2.0-1

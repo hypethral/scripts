@@ -1,31 +1,29 @@
-ace-of-penguins
-aic94xx-firmware
-assetfinder
-cbonsai
-gftp
-gobuster-bin
-gospider-bin
-hashrat
-httprobe-bin
-hypridle
-hyprlock
-image-optimizer
-mpvpaper
-nbfc-linux
-numix-circle-icon-theme-git
-paru
-rar
-rofi-lbonn-wayland
-spacecadetpinball-git
-spotify
-subfinder-bin
-swww
-textsnatcher
-tgpt-bin
-tor-browser
-ttf-font-awesome-4
-ttf-times-new-roman
-upd72020x-fw
-ventoy-bin
-waypaper
-wd719x-firmware
+aic94xx-firmware 30-10
+amass-bin 4.2.0-1
+cbonsai 1.3.1-3
+chatterino2-appimage 2.5.1-1
+chiaki 2.2.0-2
+dirsearch 0.4.3-5
+gftp 2.9.1b-6
+hyprshot 1.3.0-1
+ipinfo-cli 3.3.1-1
+nbfc-linux 0.2.7-1
+ntfs2btrfs 20240115-1
+numix-circle-icon-theme-git 24.10.01.r0.g25c3f9e-1
+numix-icon-theme-git 24.09.18.r0.g02e5e3b2c-1
+osu-lazer-bin 2024.906.2-1
+osu-mime 0.1-2
+paru 2.0.4-1
+paru-debug 2.0.4-1
+pcsx2-latest-bin 2.1.177-1
+proton-ge-custom-bin 1:GE_Proton9_15-1
+python-nvidia-ml-py 12.560.30-1
+rar 7.01-1
+spacecadetpinball-git 2.1.0.r6.gcb9b7b8-1
+subfinder-bin 2.6.6-2
+textsnatcher-git 2.0.0.r5.g1d7e059-1
+ttf-font-awesome-4 4.7.0-7
+upd72020x-fw 1:1.0.0-2
+ventoy-bin 1.0.99-1
+waypaper 2.3-1
+wd719x-firmware 1-7
