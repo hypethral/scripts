@@ -21,3 +21,11 @@ yt-dlp 'link' -S "res:1080,vcodec:av1"
 
 ufw allow from 192.168.1.104 to any port 50000:50003 proto tcp
 ufw allow from 192.168.1.104 to any port 2211
+
+scp -P <port-number> -r dark@xxx.225.xxx.xxx:/var/www/x . 
+
+find . -name '*.zip' -exec unzip {} \;
+tar cf newtar.tar folder
+tar czf newtar.tar.gz folder
+tar xf tartoextract.tar
+tar tvf listcontents.tar
