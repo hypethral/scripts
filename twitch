@@ -2,4 +2,4 @@
 echo 'streamlink -p mpv twitch.tv/xqc 1080p60'
 echo -n $"twitch.tv/"
 read username
-streamlink -p mpv --twitch-disable-ads --twitch-low-latency twitch.tv/$username 1080p60
+streamlink -p mpv --twitch-disable-ads --twitch-low-latency twitch.tv/$username 1080p60 -v
