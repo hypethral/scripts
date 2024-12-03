@@ -1,2 +1,2 @@
 #!/bin/sh
-doas reflector --latest 50 --sort score --save /etc/pacman.d/mirrorlist
+doas reflector --verbose --latest 30 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
