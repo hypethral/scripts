@@ -1,0 +1,8 @@
+#!/bin/sh
+#  doas compsize -x /media/nvme/
+#  doas btrfs filesystem defragment -r -v -czstd /
+#  findmnt --verify --verbose
+fstrim --all
+btrfs scrub start /
+btrfs scrub start /media/ssd
+btrfs scrub start /media/nvme

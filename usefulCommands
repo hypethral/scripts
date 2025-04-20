@@ -29,3 +29,5 @@ tar cf newtar.tar folder
 tar czf newtar.tar.gz folder
 tar xf tartoextract.tar
 tar tvf listcontents.tar
+
+xrandr --output DP-4 --primary

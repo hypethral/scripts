@@ -1,0 +1,5 @@
+#!/bin/bash
+echo 'ddcutil setvcp 10 100'
+echo -n $"Brightnesss -> "
+read brightness
+ddcutil setvcp 10 $brightness

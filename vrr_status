@@ -1,0 +1,2 @@
+#!/bin/sh
+echo " $(hyprctl monitors | grep -F "vrr" | sed 's/^[ \t]*//' | sed -n 2p)"

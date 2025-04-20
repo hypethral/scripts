@@ -1,0 +1,4 @@
+#!/bin/sh
+for file in *.opus; do
+ ffmpeg -y -i "$file" -c:a libmp3lame "${file%.opus}.mp3"
+done

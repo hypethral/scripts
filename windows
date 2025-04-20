@@ -1,2 +1,2 @@
 #!/bin/sh
-doas efibootmgr --bootnext 003 && reboot
+doas efibootmgr --bootnext 004 && reboot
