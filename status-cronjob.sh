@@ -25,38 +25,5 @@ printf "%-17s\n" "--------------------------------------------------------------
 url="https://hooks.slack.com/services/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"
 
 myEcho=$(system_monitor)
-# echo "$(system_monitor)"
 echo "$myEcho"
-# curl -X POST -H 'Content-type: application/json' --data "{\"text\": \"${myEcho}\"}" "$url"
 curl -X POST -H 'Content-type: application/json' --data "{\"text\": \" ${myEcho}\"}" "$url"
-# ${myEcho}
-# echo1="System Resource Monitor"
-# echo2="-----------------------"
-# echo3=$(ram_usage)
-# echo4=$(cpu_usage)
-# echo5="$(storage_usage)"
-# curl -X POST -H 'Content-type: application/json' --data "{\"text\": \"${echo1}\"}" "$url"
-# curl -X POST -H 'Content-type: application/json' --data "{\"text\": \"${echo2}\"}" "$url"
-# curl -X POST -H 'Content-type: application/json' --data "{\"text\": \"${echo3}\"}" "$url"
-# curl -X POST -H 'Content-type: application/json' --data "{\"text\": \"${echo4}\"}" "$url"
-# curl -X POST -H 'Content-type: application/json' --data "{\"text\": \"${echo5}\"}" "$url"
-
-# curl -X POST -H 'Content-type: application/json' --data "{\"text\": \"Hello from Bash!\"}" "$url"
-# curl -X POST -H "Content-Type: application/json" -d "$(echo "${myEcho}")" "$url"
-# curl -X POST -H 'Content-type: application/json' --data "{\"text\": \"${theecho}\"}" "$url"
-# curl -X POST -H 'Content-type: application/json' --data '{"text": "${myEcho}"}' "$url"
-
-# curl -X POST -H "Content-Type: application/json" -d "$myEcho" "$url"
-# $(echo "${myEcho}")
-# curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello, World!"}' https://hooks.slack.com/services/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
-# curl -X POST -H 'Content-type: application/json' --data '{"text":"${myEcho}"}' https://hooks.slack.com/services/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
-
-# curl -X POST -H 'Content-type: application/json' --data '{"text":"$(echo "$myEcho")"}' https://hooks.slack.com/services/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
-
-# echo "$myEcho"
-# $myEcho
-# curl -X POST -H 'Content-type: application/json' --data '{"text": '$myEcho'}' https://hooks.slack.com/services/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
-# curl -X POST -H 'Content-Type: application/json' --data @"$data_file" https://example.com/api/fromfile
-
-
-# curl -X POST -H 'Content-Type: application/json' --data @"echo $myEcho" https://hooks.slack.com/services/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
